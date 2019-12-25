@@ -11,6 +11,6 @@ jobs:
         runs-on: ubuntu-latest
         name: Deploy clouformation in to AWS
         steps:
-            - name: Check current path
             - uses: actions/checkout@v2 # todo: switch to v2
+            - name: Check current path
               run: ./test.sh
