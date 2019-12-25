@@ -1,0 +1,15 @@
+name: "Researching CI/CD by using Github actions"
+
+on:
+    push:
+        branches:
+            - master
+            - develop
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        name: Deploy clouformation in to AWS
+        steps:
+            - name: Check current path
+              run: ./test.sh
